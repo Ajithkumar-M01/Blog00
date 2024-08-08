@@ -1,0 +1,304 @@
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+.box {
+    width: 90%;
+    max-width: 900px;
+    margin:  0 auto;
+}
+
+.box-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #143774;
+    font-weight: lighter;
+    font-family: "Lora", serif;
+    font-weight: 100;
+}
+
+header {
+    background: #f8f8f8;
+    padding: 2em 0;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.sub {
+    color: #1792d2;
+    font-weight: bold;
+    font-size: .75rem;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-left: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #707070;
+    font-weight: bold;
+    padding: .25em 0; 
+    /* padding was given to increase the size clicking space soc that users can click easily */
+    font-size: 1rem;
+}
+
+nav a:hover, nav a:focus {
+    color: #1792d2;
+}
+
+.active {
+    border-bottom: 1px solid #707070;
+}
+
+.active:hover {
+    color: #707070;
+
+}
+
+/* .box2 {
+    font-size: 1rem;
+    margin-right: auto;
+}
+
+.box1 {
+    margin-left: auto;
+    margin-right: 100px;
+} */
+
+@media (max-width: 640px)  {
+
+    .box-nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    nav li {
+        margin: .5em 0;
+    }
+   
+}
+
+/* ---------------BODY CLASS------------------- */
+
+.art-title {
+    font-family: "Lora", serif;
+    font-size: 1.5rem;
+    color: #143774;
+}
+
+.body {
+    font-size: 1.125rem;
+    font-weight: light;
+    /* color: #707070; */
+    width: 90%;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.body-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.read-more {
+    font-weight: 700;
+    color: #1792d2;
+    font-size: 0.875rem;
+    text-decoration: none;
+}
+
+.art-info {
+    font-weight: 300;
+    font-size: 0.875rem;
+    margin: 2em 0;
+}
+
+.read-more:hover {
+    color: #143774;
+    text-decoration: underline;
+}
+
+a {
+    color: #1792d2;
+}
+
+a:hover, a:focus {
+    color: #143774;
+}
+
+strong {
+    font-weight: 700;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.r-art {
+    display: flex;
+    justify-content: space-between;
+}
+
+.r-art-main {
+    width: 65%;
+}
+
+.r-art-sub {
+    width: 35%;
+}
+
+.r-art-main {
+    order: 2;
+}
+
+.r-art-sub {
+    order: 1;
+}
+
+.s-art {
+    display: flex;
+    flex-direction: column;
+}
+
+.art-img {
+    order: -2;
+}
+
+.art-info {
+    order: -1;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+.art-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.sb-widget {
+    border: 20px solid #efefef;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+.widget-title {
+    font-size: 1rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    color: #143774;
+    margin-bottom: 1em;
+}
+
+.sb-widget-rp {
+    border-bottom: 1px solid #707070;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.sb-widget-rp:last-child {
+    margin: 0;
+    border: 0;
+}
+
+.sb-widget-rp img {
+    order: -1
+}
+
+
+footer {
+    background: #143774;
+    color: white;
+    padding: 2em 0;
+    text-align: center;
+}
+
+main {
+    width: 75%;
+}
+
+.sidebar {
+    width: 25%;
+}
+
+main {
+    margin-right: 2.5em;
+}
+
+.r-art-img {
+    width: 80%;
+    min-height: 250px;
+    object-fit: cover;
+}
+
+.sb-rp-title {
+    color: #143774;
+    font-size: 1em;
+    font-family: "Lora", Serif;
+    font-weight: 300;
+}
+
+@media (max-width: 640px) {
+
+    .body-flex {
+        flex-direction: column;
+    }
+
+    .r-art {
+        flex-direction: column;
+    }
+
+    main {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .sidebar {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .r-art-main, .r-art-sub {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .r-art-img {
+        width: 100%;
+    }
+
+    .r-art-main {
+        margin-bottom: 2em;
+    }
+
+}
